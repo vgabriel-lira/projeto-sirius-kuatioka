@@ -1,19 +1,21 @@
 package br.edu.ifpb.kuatiaoka.modelo;
 
-import java.util.List;
-
-public class CD extends Item {
+public class CD {
+    private int id;
+    private String titulo;
     private String artista;
-    private List<String> listaFaixas;
+    private int numeroFaixas;
 
-    public CD(String titulo, String editora, String artista, List<String> listaFaixas) {
-        super(titulo, editora);
+    public CD(int id, String titulo, String artista, int numeroFaixas) {
+        this.id = id;
+        this.titulo = titulo;
         this.artista = artista;
-        this.listaFaixas = listaFaixas;
+        this.numeroFaixas = numeroFaixas;
     }
 
-    @Override
-    public String toString() {
-        return "CD: " + getTitulo() + " | Artista: " + artista + " | Faixas: " + listaFaixas.size();
-    }
+    // Getters básicos...
+    public int getId() { return id; }
+    public String getTitulo() { return titulo; }
+    public String getArtista() { return artista; }
+    public int getNumeroFaixas() { return numeroFaixas; }
 }

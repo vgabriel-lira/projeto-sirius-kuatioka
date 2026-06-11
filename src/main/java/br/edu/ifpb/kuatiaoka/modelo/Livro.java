@@ -1,29 +1,28 @@
 package br.edu.ifpb.kuatiaoka.modelo;
 
-public class Livro extends Item {
-    private String isbn;
+public class Livro {
+    private int id;
+    private String titulo;
     private String autor;
-    private int ano;
-    private int edicao;
-    private String genero;
-    private int paginas;
-    private String sinopse;
+    private String editora; // Na parte 1 ainda era uma String simples
+    private int numeroPaginas;
+    private boolean emprestado;
 
-    public Livro(String titulo, String editora, String isbn, String autor, int ano, int edicao, String genero, int paginas, String sinopse) {
-        super(titulo, editora); // Passa apenas o basico para a classe pai
-        this.isbn = isbn;
+    public Livro(int id, String titulo, String autor, String editora, int numeroPaginas) {
+        this.id = id;
+        this.titulo = titulo;
         this.autor = autor;
-        this.ano = ano;
-        this.edicao = edicao;
-        this.genero = genero;
-        this.paginas = paginas;
-        this.sinopse = sinopse;
+        this.editora = editora;
+        this.numeroPaginas = numeroPaginas;
+        this.emprestado = false;
     }
 
-    public String getIsbn() { return isbn; }
-    
-    @Override
-    public String toString() {
-        return "Livro: " + getTitulo() + " | Autor: " + autor + " | ISBN: " + isbn;
-    }
+    // Getters e Setters básicos...
+    public int getId() { return id; }
+    public String getTitulo() { return titulo; }
+    public String getAutor() { return autor; }
+    public String getEditora() { return editora; }
+    public int getNumeroPaginas() { return numeroPaginas; }
+    public boolean isEmprestado() { return emprestado; }
+    public void setEmprestado(boolean emprestado) { this.emprestado = emprestado; }
 }
