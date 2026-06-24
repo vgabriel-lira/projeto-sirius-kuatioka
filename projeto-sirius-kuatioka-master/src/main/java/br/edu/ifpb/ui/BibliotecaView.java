@@ -337,4 +337,3 @@ private void consultarItens() {
         pausar();
     }
 }
-
