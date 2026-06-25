@@ -5,4 +5,3 @@ public class ItemNaoEmprestavelException extends Exception {
         super(mensagem);
     }
 }
-

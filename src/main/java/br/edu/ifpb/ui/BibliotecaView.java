@@ -18,9 +18,9 @@ public class BibliotecaView {
     public void iniciar() {
         int opcao;
         do {
-            System.out.println("\n=================================");
+            System.out.println("\n=============================================");
             System.out.println("   PROJETO SIRIUS - BIBLIOTECA KUATIAOKA ");
-            System.out.println("=================================");
+            System.out.println("=============================================");
             System.out.println("1. Cadastros");
             System.out.println("2. Operações (Empréstimos, Devoluções e Vendas)");
             System.out.println("3. Consultas e Relatórios");

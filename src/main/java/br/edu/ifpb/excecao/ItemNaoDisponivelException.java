@@ -5,4 +5,3 @@ public class ItemNaoDisponivelException extends Exception {
         super(mensagem);
     }
 }
-
